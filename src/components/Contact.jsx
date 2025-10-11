@@ -45,8 +45,8 @@ const Contact = () => {
 
   return (
     <footer id="contact">
-      <img src={footerRightLeaf} alt="leaf-right" id="f-right-leaf" />
-      <img src={footerLeftLeaf} alt="leaf-left" id="f-left-leaf" />
+      <img src={footerRightLeaf} alt="leaf-right" id="f-right-leaf" loading="lazy" />
+      <img src={footerLeftLeaf} alt="leaf-left" id="f-left-leaf" loading="lazy" />
 
       <div className="content">
         <h2>Where to Find Us</h2>
@@ -83,7 +83,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 aria-label={social.name}
               >
-                <img src={social.icon} />
+                <img src={social.icon}  loading="lazy"/>
               </a>
             ))}
           </div>

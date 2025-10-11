@@ -63,8 +63,8 @@ const Menu = () => {
 
   return (
     <section id="menu" aria-labelledby="menu-heading">
-      <img src={sliderLeftLeaf} alt="left-leaf" id="m-left-leaf" />
-      <img src={sliderRightLeaf} alt="right-leaf" id="m-right-leaf" />
+      <img src={sliderLeftLeaf} alt="left-leaf" id="m-left-leaf" loading="lazy" />
+      <img src={sliderRightLeaf} alt="right-leaf" id="m-right-leaf" loading="lazy" />
 
       <h2 id="menu-heading" className="sr-only">
         Cocktail Menu
@@ -95,7 +95,7 @@ const Menu = () => {
             onClick={() => goToSlide(currentIndex - 1)}
           >
             <span>{prevCocktail.name}</span>
-            <img src={rightArrow} alt="right-arrow" aria-hidden="true" />
+            <img src={rightArrow} alt="right-arrow" aria-hidden="true" loading="lazy" />
           </button>
 
           <button
@@ -103,12 +103,12 @@ const Menu = () => {
             onClick={() => goToSlide(currentIndex + 1)}
           >
             <span>{nextCocktail.name}</span>
-            <img src={leftArrow} alt="left-arrow" aria-hidden="true" />
+            <img src={leftArrow} alt="left-arrow" aria-hidden="true" loading="lazy" />
           </button>
         </div>
 
         <div className="cocktail">
-          <img src={currentCocktail.image} className="object-contain" />
+          <img src={currentCocktail.image} className="object-contain" loading="lazy" />
         </div>
 
         <div className="recipe">
